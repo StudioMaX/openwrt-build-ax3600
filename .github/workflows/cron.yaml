@@ -44,6 +44,7 @@ jobs:
           ref: ipq807x-5.15-pr
       - name: Update and install feeds
         run: |
+          curl -L https://github.com/openwrt/openwrt/pull/10566.patch | git apply
           ./scripts/feeds update -a
           ./scripts/feeds install -a
       - name: Generate config for Xiaomi AX3600

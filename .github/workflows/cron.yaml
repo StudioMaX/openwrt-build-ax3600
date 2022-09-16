@@ -55,9 +55,54 @@ jobs:
           echo "CONFIG_TARGET_ROOTFS_INITRAMFS=y\n" >> .config
           echo "CONFIG_TARGET_INITRAMFS_COMPRESSION_ZSTD=y\n" >> .config
           echo "CONFIG_PACKAGE_luci=y\n" >> .config
-          echo "CONFIG_PACKAGE_wpad-basic-wolfssl=m\n" >> .config
+          echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n\n" >> .config
           echo "CONFIG_PACKAGE_wpad-wolfssl=y\n" >> .config
           echo "CONFIG_WOLFSSL_HAS_CPU_CRYPTO=y\n" >> .config
+          # firmware
+          echo "CONFIG_PACKAGE_nss-firmware-ipq8074=m\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-qca-nss-ecm=m\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=m\n" >> .config
+          # custom apps
+          echo "CONFIG_PACKAGE_6in4=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-ddns=y\n" >> .config
+          echo "CONFIG_PACKAGE_iperf=y\n" >> .config
+          echo "CONFIG_PACKAGE_iperf3=y\n" >> .config
+          echo "CONFIG_PACKAGE_mtr-json=y\n" >> .config
+          echo "CONFIG_PACKAGE_tcpdump=y\n" >> .config
+          echo "CONFIG_PACKAGE_etherwake=y\n" >> .config
+          echo "CONFIG_PACKAGE_igmpproxy=y\n" >> .config
+          echo "CONFIG_PACKAGE_hostapd-utils=y\n" >> .config
+          echo "CONFIG_PACKAGE_nmap=y\n" >> .config
+          echo "CONFIG_PACKAGE_htop=y\n" >> .config
+          echo "CONFIG_PACKAGE_bind-dig=y\n" >> .config
+          echo "CONFIG_PACKAGE_https-dns-proxy=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-https-dns-proxy=y\n" >> .config
+          echo "CONFIG_PACKAGE_stubby=y\n" >> .config
+          echo "CONFIG_PACKAGE_unzip=y\n" >> .config
+          echo "CONFIG_PACKAGE_openvpn-openssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-openvpn=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-upnp=y\n" >> .config
+          echo "CONFIG_PACKAGE_curl=y\n" >> .config
+          echo "CONFIG_PACKAGE_ddns-scripts-cloudflare=y\n" >> .config
+          echo "CONFIG_PACKAGE_rsync=m\n" >> .config
+          echo "CONFIG_PACKAGE_haproxy=m\n" >> .config
+          echo "CONFIG_PACKAGE_luci-ssl-nginx=m\n" >> .config
+          echo "CONFIG_PACKAGE_yggdrasil=m\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-yggdrasil=m\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-statistics=y\n" >> .config
+          echo "CONFIG_PACKAGE_collectd-mod-ping=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-nlbwmon=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
+          echo "CONFIG_PACKAGE_wireguard=y\n" >> .config
+          echo "CONFIG_PACKAGE_qrencode=y\n" >> .config
+          echo "CONFIG_PACKAGE_shadowsocks-libev-ss-local=y\n" >> .config
+          echo "CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y\n" >> .config
+          echo "CONFIG_PACKAGE_shadowsocks-libev-ss-rules=y\n" >> .config
+          echo "CONFIG_PACKAGE_shadowsocks-libev-ss-tunnel=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-shadowsocks-libev=y\n" >> .config
+          echo "CONFIG_PACKAGE_wget-ssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_dnsmasq=n\n" >> .config
+          echo "CONFIG_PACKAGE_dnsmasq-full=y\n" >> .config
           make defconfig
       - name: Enable WiFi on default config
         run: |

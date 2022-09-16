@@ -79,6 +79,7 @@ jobs:
           echo "CONFIG_PACKAGE_iperf3=y\n" >> .config
           echo "CONFIG_PACKAGE_mtr-json=y\n" >> .config
           echo "CONFIG_PACKAGE_nmap=y\n" >> .config
+          echo "CONFIG_PACKAGE_openssl-util=y\n" >> .config
           echo "CONFIG_PACKAGE_openvpn-openssl=y\n" >> .config
           echo "CONFIG_PACKAGE_qrencode=y\n" >> .config
           echo "CONFIG_PACKAGE_rsync=m\n" >> .config

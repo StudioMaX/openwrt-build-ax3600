@@ -56,7 +56,8 @@ jobs:
           echo "CONFIG_TARGET_INITRAMFS_COMPRESSION_ZSTD=y\n" >> .config
           echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n\n" >> .config
           echo "CONFIG_PACKAGE_wpad-wolfssl=y\n" >> .config
-          echo "CONFIG_WOLFSSL_HAS_CPU_CRYPTO=y\n" >> .config
+          # echo "CONFIG_PACKAGE_libwolfssl=n\n" >> .config
+          # echo "CONFIG_PACKAGE_libwolfsslcpu-crypto=y\n" >> .config
           # firmware
           echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=m\n" >> .config
           echo "CONFIG_PACKAGE_kmod-qca-nss-ecm=m\n" >> .config

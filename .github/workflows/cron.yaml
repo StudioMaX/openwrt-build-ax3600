@@ -46,7 +46,7 @@ jobs:
         run: |
           # curl -L https://github.com/openwrt/openwrt/pull/10566.patch | git apply
           ./scripts/feeds update -a
-          curl -L https://github.com/openwrt/packages/pull/19535.patch | git apply --directory=feeds/packages
+          # curl -L https://github.com/openwrt/packages/pull/19535.patch | git apply --directory=feeds/packages
           ./scripts/feeds install -a
       - name: Generate config for Xiaomi AX3600
         run: |

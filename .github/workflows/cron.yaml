@@ -72,7 +72,7 @@ jobs:
           echo "CONFIG_PACKAGE_dnsmasq=n\n" >> .config
           echo "CONFIG_PACKAGE_dnsmasq-full=y\n" >> .config
           echo "CONFIG_PACKAGE_etherwake=y\n" >> .config
-          echo "CONFIG_PACKAGE_haproxy=m\n" >> .config
+          echo "CONFIG_PACKAGE_haproxy=y\n" >> .config
           echo "CONFIG_PACKAGE_hostapd-utils=y\n" >> .config
           echo "CONFIG_PACKAGE_https-dns-proxy=y\n" >> .config
           echo "CONFIG_PACKAGE_htop=y\n" >> .config

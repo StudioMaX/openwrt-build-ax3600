@@ -38,7 +38,7 @@ jobs:
         run: |
           echo "Build triggered with commits last pushed $COMMIT_AGE hours ago"
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: robimarko/openwrt
           ref: ipq807x-5.15-pr
@@ -165,7 +165,7 @@ jobs:
       - name: TAR output
         run: tar -cvf ipq807xx-images.tar bin/targets/ipq807x/generic
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ipq807x-images
           path: ipq807xx-images.tar
@@ -176,7 +176,7 @@ jobs:
 
     steps:
       - name: Download the image artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: ipq807x-images
       - name: Extract the image artifacts

@@ -110,9 +110,6 @@ jobs:
           echo "CONFIG_PACKAGE_luci-ssl-nginx=m\n" >> .config
           # pbr
           echo "CONFIG_PACKAGE_ip-full=y\n" >> .config
-          echo "CONFIG_PACKAGE_ipset=y\n" >> .config
-          echo "CONFIG_PACKAGE_iptables-mod-ipopt=y\n" >> .config
-          echo "CONFIG_PACKAGE_iptables-nft=y\n" >> .config
           make defconfig
       - name: Enable WiFi on default config
         if: ${{ false }}

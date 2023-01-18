@@ -103,8 +103,8 @@ jobs:
           echo "CONFIG_PACKAGE_luci-app-statistics=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-uhttpd=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-upnp=y\n" >> .config
-          echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-yggdrasil=m\n" >> .config
+          echo "CONFIG_PACKAGE_luci-proto-wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-ssl=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-ssl-nginx=m\n" >> .config
           # pbr

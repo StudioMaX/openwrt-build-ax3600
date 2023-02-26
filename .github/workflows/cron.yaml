@@ -54,8 +54,8 @@ jobs:
           echo "CONFIG_TARGET_ipq807x_generic=y\n" >> .config
           echo "CONFIG_TARGET_ipq807x_generic_DEVICE_xiaomi_ax3600=y\n" >> .config
           echo "CONFIG_TARGET_ROOTFS_INITRAMFS=y\n" >> .config
-          echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n\n" >> .config
-          echo "CONFIG_PACKAGE_wpad-wolfssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_wpad-basic-mbedtls=n\n" >> .config
+          echo "CONFIG_PACKAGE_wpad-mbedtls=y\n" >> .config
           # echo "CONFIG_PACKAGE_libwolfssl=n\n" >> .config
           # echo "CONFIG_PACKAGE_libwolfsslcpu-crypto=y\n" >> .config
           # firmware
